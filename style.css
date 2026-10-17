@@ -640,70 +640,51 @@ button:hover {
 @media (max-width: 600px) {
 
     section {
-        padding: 60px 18px;
+        min-height: 100vh;
+        height: auto;
+        padding-top: 70px;
+        padding-bottom: 120px;
     }
 
-    .opening h1 {
-        font-size: 60px;
+    .bts {
+        min-height: 100vh;
+        padding-bottom: 130px;
     }
 
-    .subtitle {
-        font-size: 20px;
+    .bts-gallery {
+        margin-bottom: 35px;
     }
 
-    .birthday h1 {
-        font-size: 65px;
+    .bts button {
+        margin-bottom: 10px;
     }
 
-    .photo-card {
-        width: 88%;
-        max-width: 310px;
-    }
-
-    .photo-card img {
-        height: 360px;
-    }
-
-    .bts-card {
-        width: 88%;
-        max-width: 310px;
-        height: 390px;
+    .letter {
+        min-height: 100vh;
+        padding-bottom: 130px;
     }
 
     .letter-box {
-        padding: 45px 25px;
+        margin-bottom: 20px;
     }
 
-    .final h1 {
-        font-size: 62px;
+    .final {
+        min-height: 100vh;
+        padding-bottom: 140px;
     }
-}
-/* 🎵 Center Music Button */
-#musicBtn {
-    position: fixed;
-    left: 50%;
-    bottom: 30px;
-    transform: translateX(-50%);
-    z-index: 9999;
 
-    padding: 12px 24px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 30px;
+    .special-button {
+        margin-bottom: 20px;
+    }
 
-    background: rgba(90, 30, 100, 0.85);
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
+    #musicBtn {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99999;
+        position: fixed;
+    }
 
-    cursor: pointer;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-
-    transition: 0.3s ease;
-}
-
-#musicBtn:hover {
-    transform: translateX(-50%) scale(1.05);
 }
 /* 💜 Final Surprise Photo Background */
 
