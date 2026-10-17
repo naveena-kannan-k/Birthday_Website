@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise 💜</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 💜 BTS Floating Decorations -->
+<div class="bts-floating">
+    <span>💜</span>
+    <span>✨</span>
+    <span>🦋</span>
+    <span>💜</span>
+    <span>💫</span>
+    <span>✨</span>
+    <span>💜</span>
+    <span>🦋</span>
+</div>
+    <!-- 🎵 Into the Sun Music -->
+<audio id="bgMusic" preload="metadata" loop>
+    <source src="music/dynamite.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" onclick="toggleMusic()">
+    🎵 Play Into the Sun
+</button>
+    <!-- Floating Decorations -->
+    <div class="floating">💜</div>
+    <div class="floating">✨</div>
+    <div class="floating">🦋</div>
+    <div class="floating">💫</div>
+    <div class="floating">💜</div>
+
+    <!-- Opening Section -->
+    <section class="opening" id="opening">
+
+        <div class="opening-content">
+
+            <p class="tiny">A little surprise made specially for you...</p>
+
+            <div class="heart">💜</div>
+
+            <h1>Hey Birthday Girl! 🎀</h1>
+
+            <p class="subtitle">
+                I have something special waiting for you...
+            </p>
+
+            <button onclick="startSurprise()">
+                Open Your Surprise ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Birthday Section -->
+    <section class="birthday" id="birthday">
+
+        <p class="small-title">Today is your special day</p>
+
+        <h1>HAPPY BIRTHDAY</h1>
+
+        <h2>My Favourite Person 💜</h2>
+
+        <p>
+            May your day be filled with happiness,
+            laughter, love and lots of beautiful memories. ✨
+        </p>
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <button onclick="showMemories()">
+            See Our Memories 📸
+        </button>
+
+    </section>
+
+
+    <!-- Memories Section -->
+    <section class="memories" id="memories">
+
+        <p class="small-title">Some memories that I love 💕</p>
+
+        <h1>Our Little Memories 📸</h1>
+
+        <div class="photo-container">
+
+            <div class="photo-card rotate-left">
+                <img src="images/bestie1.jpg" alt="Bestie Memory 1">
+                <p>Us 💕</p>
+            </div>
+
+            <div class="photo-card rotate-right">
+                <img src="images/bestie2.jpg" alt="Bestie Memory 2">
+                <p>Beautiful You ✨</p>
+            </div>
+
+            <div class="photo-card rotate-left">
+                <img src="images/bestie3.jpg" alt="Bestie Memory 3">
+                <p>Forever Memories 💜</p>
+            </div>
+
+        </div>
+
+        <button onclick="showBTS()">
+            Enter Your BTS World 💜
+        </button>
+
+    </section>
+
+
+    <!-- BTS Section -->
+    <section class="bts" id="bts">
+
+        <p class="small-title">Because I know how much you love them...</p>
+
+        <h1>Your BTS Corner 💜</h1>
+
+        <p class="bts-text">
+            A little BTS surprise for the biggest BTS lover! 💜
+        </p>
+
+        <div class="bts-gallery">
+
+    <div class="bts-card" onclick="openBTSPhoto('images/bts1.jpg')">
+        <img src="images/bts1.jpg" alt="BTS">
+    </div>
+
+    <div class="bts-card" onclick="openBTSPhoto('images/bts2.jpg')">
+        <img src="images/bts2.jpg" alt="BTS">
+    </div>
+
+    <div class="bts-card" onclick="openBTSPhoto('images/bts3.jpg')">
+        <img src="images/bts3.jpg" alt="BTS">
+    </div>
+
+</div>
+
+<!-- BTS Photo Popup -->
+<div id="btsPopup" class="bts-popup">
+
+    <span class="bts-close" onclick="closeBTSPhoto()">×</span>
+
+    <div class="cute-popup">
+
+        <div class="cute-stars">✨ 💜 ✨</div>
+
+        <img id="btsPopupImage" src="" alt="BTS">
+
+        <div class="cute-message" id="cuteMessage">
+            Heyyy Cutie! 🥹💜
+        </div>
+
+        <div class="cute-submessage" id="cuteSubMessage">
+            Happy Birthdayyy! 🎂✨
+        </div>
+
+    </div>
+
+</div>
+        <button onclick="showLetter()">
+            One More Thing 💌
+        </button>
+
+    </section>
+
+
+    <!-- Letter Section -->
+    <section class="letter" id="letter">
+
+        <div class="letter-box">
+
+            <div class="envelope">💌</div>
+
+            <h1>A Little Letter For You</h1>
+
+            <p>
+                Happy Birthday to someone who makes life
+                a little brighter just by being there. 💜
+            </p>
+
+            <p>
+                Thank you for all the laughs, memories,
+                silly moments and everything in between.
+            </p>
+
+            <p>
+                I hope this new year of your life brings
+                you everything your heart wishes for. ✨
+            </p>
+
+            <p class="last-line">
+                Keep smiling. Keep shining. Stay the amazing
+                person you are. 💕
+            </p>
+
+            <button onclick="showFinal()">
+                Open Final Surprise 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Final Surprise -->
+    <!-- Final Surprise -->
+<section class="final" id="final">
+
+    <div class="final-content">
+
+        <div class="gift">🎁</div>
+
+        <h1>Happy Birthday! 💜</h1>
+
+        <p>
+            No matter where life takes us,
+            some memories will always stay special.
+        </p>
+
+        <h2>Forever & Always 💜</h2>
+
+        <div class="final-emojis">
+            🎂 💜 🦋 ✨ 🎀
+        </div>
+
+        <button class="special-button" onclick="openBirthdayVideo()">
+            💜 Specially For You 💜
+        </button>
+
+    </div>
+
+</section>
+<!-- 🎬 Birthday Video Popup -->
+<div id="birthdayVideoPopup" class="birthday-video-popup">
+
+    <span class="video-close" onclick="closeBirthdayVideo()">×</span>
+
+    <div class="video-box">
+
+        <div class="video-title">
+            A Special Surprise For You 💜✨
+        </div>
+
+        <video
+            id="birthdayVideo"
+            controls
+            playsinline
+            preload="auto"
+            width="100%">
+            
+            <source src="./video/birthday_web.mp4" type="video/mp4">
+
+            Your browser does not support video.
+        </video>
+
+        <p>Made with 💜 specially for you</p>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
