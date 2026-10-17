@@ -1414,3 +1414,14 @@ button:hover {
     visibility: visible !important;
     opacity: 1 !important;
 }
+@media (max-width: 600px) {
+
+    #musicBtn {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99999;
+        position: fixed;
+    }
+
+}
